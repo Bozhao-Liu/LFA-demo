@@ -43,11 +43,7 @@ python evaluate.py --dataset cifar10 --checkpoint path/to/weights.pth
 ```
 
 ## Figure 2 (LFA Visualization)
-
-> **Figure 2** could not be auto-located in the provided archives. Please replace `assets/figure2.png` with the correct image if available.
-
-
-![Figure 2 placeholder](assets/figure2.png)
+![plot](assets/figure2.png)
 
 ## Datasets
 
