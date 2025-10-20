@@ -1,0 +1,7 @@
+Pillow
+numpy
+pandas
+scikit-learn
+torch
+torchvision
+tqdm

@@ -1,0 +1,9 @@
+{
+    "batch_size": 100,
+    "epochs": 20,
+    "num_workers": 4,
+    "CV_iters": 5,
+    "channels": 10,
+    "learning_rate": 1e-5,
+    "weight_decay": 1e-3
+}

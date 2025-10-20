@@ -1,0 +1,6 @@
+{
+    "learning_rate": 0.0001,
+    "epochs": 3,
+    "lrDecay": 0.87,
+    "gamma": 2
+}
