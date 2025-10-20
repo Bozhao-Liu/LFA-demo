@@ -55,17 +55,17 @@ python evaluate.py --dataset cifar10 --checkpoint path/to/weights.pth
 ### Table 1
 
 *attributes of datasets included in the Original paper of LFA *
-| --- | --- | --- |  Medical datasets | --- | --- | --- | |
+| Medical datasets | --- | --- | --- | --- | --- | --- | --- |  
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| --- | --- | Breast Histopathology  | --- | --- |  CADCAP | --- | --- | 
+| Breast Histopathology  | --- | --- | --- |  CADCAP | --- | --- | --- | 
 | Original | | Subset |  |  |  |  |  |
-| Condition | Quantity | Condition | Quantity | Condition |  | Quantity |  |
-| IDC+ | 78,786 | IDC+ | 11,050 | inflammatory |  | 607 |  |
-| IDC- | 198,738 | IDC- | 44,200 | vascularlesions | | \multicolumn{2}{c}{605} |  |
-|  |  |  |  | healthy control |  | 600 |  |
+| Condition | Quantity | Condition | Quantity | Condition | Quantity |  | |
+| IDC+ | 78,786 | IDC+ | 11,050 | inflammatory | 607 |  |  | 
+| IDC- | 198,738 | IDC- | 44,200 | vascularlesions | 605 |  |  | 
+|  |  |  |  | healthy control | 600 |  |   | 
 |  |  |  |  |  |  |  |  |
 | Total | 277,524 | Total | 55,259 | Total |  | 1812 |   |
-| --- | --- | --- |   General datasets | --- | --- | --- |  |
+| General datasets | --- | --- | --- |  ---  | --- | --- | --- |   
 | \multicolumn{6}{c|}{CelebA \cite{CelebA}} |  |  |  |  |  |  |  |
 | \multicolumn{2}{c}{CIFAR10\_LT \cite{deng2012mnist}} |  |  |  |  |  |  |  |
 | Label | Quantity | Label | Quantity | Label | Quantity | Label | Quantity |
