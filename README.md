@@ -55,18 +55,17 @@ python evaluate.py --dataset cifar10 --checkpoint path/to/weights.pth
 ### Table 1
 
 *attributes of datasets included in the Original paper of LFA *
-| \multicolumn{8}{c}{\multirow{2}{*}{Medical datasets}} |  |  |  |  |  |  |  |
+| Medical datasets |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| \multicolumn{4}{c|}{Breast Histopathology \cite{janowczyk2016deep}} |  |  |  |  |  |  |  |
-| \multicolumn{4}{c}{\multirow{2}{*}{CADCAP \cite{leenhardt2020cad}}} |  |  |  |  |  |  |  |
-| \multicolumn{2}{c}{Original} | \multicolumn{2}{c|}{Subset} | \multicolumn{4}{c}{} |  |  |  |  |  |
-| Condition | Quantity | Condition | \multicolumn{1}{c|}{Quantity} | \multicolumn{2}{c}{Condition} | \multicolumn{2}{c}{Quantity} |  |  |
-| IDC+ | 78,786 | IDC+ | \multicolumn{1}{c|}{11,050} | \multicolumn{2}{c}{inflammatory} | \multicolumn{2}{c}{607} |  |  |
-| IDC- | 198,738 | IDC- | \multicolumn{1}{c|}{44,200} | \multicolumn{2}{c}{vascularlesions} | \multicolumn{2}{c}{605} |  |  |
-|  |  |  | \multicolumn{1}{c|}{} | \multicolumn{2}{c}{healthy control} | \multicolumn{2}{c}{600} |  |  |
-|  |  |  | \multicolumn{1}{c|}{} |  | \multicolumn{1}{c}{} |  |  |
-| Total | 277,524 | Total | \multicolumn{1}{c|}{55,259} | \multicolumn{2}{c}{Total} | \multicolumn{2}{c}{1812} |  |  |
-| \multicolumn{8}{c}{\multirow{2}{*}{General datasets}} |  |  |  |  |  |  |  |
+| Breast Histopathology  |  CADCAP |
+| Original | | Subset |  |  |  |  |  |
+| Condition | Quantity | Condition | Quantity | Condition |  | Quantity |  |
+| IDC+ | 78,786 | IDC+ | 11,050 | inflammatory |  | 607 |  |
+| IDC- | 198,738 | IDC- | 44,200 | vascularlesions | | \multicolumn{2}{c}{605} |  |
+|  |  |  |  | healthy control |  | 600 |  |
+|  |  |  |  |  |  |  |  |
+| Total | 277,524 | Total | 55,259 | Total |  | 1812 |   |
+| General datasets|
 | \multicolumn{6}{c|}{CelebA \cite{CelebA}} |  |  |  |  |  |  |  |
 | \multicolumn{2}{c}{CIFAR10\_LT \cite{deng2012mnist}} |  |  |  |  |  |  |  |
 | Label | Quantity | Label | Quantity | Label | Quantity | Label | Quantity |
