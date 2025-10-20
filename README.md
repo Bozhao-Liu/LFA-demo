@@ -49,46 +49,84 @@ python evaluate.py --dataset cifar10 --checkpoint path/to/weights.pth
 
 ![Figure 2 placeholder](assets/figure2.png)
 
-## Experimental Tables
-
-
-### Table 1
+## Datasets
 
 *attributes of datasets included in the Original paper of LFA *
-| Dataset | Condition | Quantity | Subset Condition | Subset Quantity |
-|:--|:--:|:--:|:--:|:--:|:--|
-| **Breast Histopathology** | IDC+ | 78,786 | IDC+ (subset) | 11,050 |
-|  | IDC- | 198,738 | IDC- (subset) | 44,200 |
-|  | Total | **277,524** | Total | **55,259** |
-| **CADCAP** | inflammatory | 607 |  |  |
-|  | vascular lesions | 605 |  |  | 
-|  | healthy control | 600 |  |  | 
-|  | Total | **1,812** |  |  |
+#### **Medical Datasets**
 
-#### **General Datasets**
+##### **Breast Histopathology**
 
-| Dataset | Label | Quantity | Label | Quantity | Label | Quantity | Notes |
-|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--|
-| **CelebA** | 5 o Clock Shadow | 22,516 | Arched Eyebrows | 54,090 | Attractive | 103,833 |  |
-|  | Bags Under Eyes | 41,446 | Bald | 4,547 | Bangs | 30,709 |  |
-|  | Big Lips | 48,785 | Big Nose | 47,516 | Black Hair | 48,472 |  |
-|  | Blond Hair | 29,983 | Blurry | 10,312 | Brown Hair | 41,572 |  |
-|  | Bushy Eyebrows | 28,803 | Chubby | 11,663 | Double Chin | 9,459 |  |
-|  | Eyeglasses | 13,193 | Goatee | 12,716 | Gray Hair | 8,499 |  |
-|  | Heavy Makeup | 78,390 | High Cheekbones | 92,189 | Male | 84,434 |  |
-|  | Mouth Slightly Open | 97,942 | Mustache | 8,417 | Narrow Eyes | 23,329 |  |
-|  | No Beard | 169,158 | Oval Face | 57,567 | Pale Skin | 8,701 |  |
-|  | Pointy Nose | 56,210 | Receding Hairline | 16,163 | Rosy Cheeks | 13,315 |  |
-|  | Sideburns | 11,449 | Smiling | 97,669 | Straight Hair | 42,222 |  |
-|  | Wavy Hair | 64,744 | Wearing Earrings | 38,276 | Wearing Hat | 9,818 |  |
-|  | Wearing Lipstick | 95,715 | Wearing Necklace | 24,913 | Wearing Necktie | 14,732 |  |
-|  | Young | 156,734 |  |  |  |  |  |
-| **CIFAR10_LT** | Airplane | 5,000 | Automobile | 3,422 | Bird | 3,650 |  |
-|  | Cat | 3,885 | Deer | 3,020 | Dog | 228 |  |
-|  | Frog | 2,525 | Horse | 4,308 | Ship | 2,259 |  |
-|  | Truck | 4,934 |  |  |  |  |  |
-| **Total** |  |  | **202,599** |  |  | **70,000** |  |
+| Condition | Quantity | Subset Condition | Quantity |
+|:--|:--:|:--:|:--:|
+| IDC+ | 78,786 | IDC+ (subset) | 11,050 |
+| IDC- | 198,738 | IDC- (subset) | 44,200 |
+| **Total** | **277,524** | **Total** | **55,259** |
 
+##### **CADCAP**
+
+| Condition | Quantity |
+|:--|:--:|
+| Inflammatory | 607 |
+| Vascular Lesions | 605 |
+| Healthy Control | 600 |
+| **Total** | **1,812** |
+
+
+#### **General Datasets*
+
+##### **CelebA**
+
+| Label | Quantity | Label | Quantity | Label | Quantity |
+|:--|:--:|:--:|:--:|:--:|:--:|
+| 5 o Clock Shadow | 22,516 | Arched Eyebrows | 54,090 | Attractive | 103,833 |
+| Bags Under Eyes | 41,446 | Bald | 4,547 | Bangs | 30,709 |
+| Big Lips | 48,785 | Big Nose | 47,516 | Black Hair | 48,472 |
+| Blond Hair | 29,983 | Blurry | 10,312 | Brown Hair | 41,572 |
+| Bushy Eyebrows | 28,803 | Chubby | 11,663 | Double Chin | 9,459 |
+| Eyeglasses | 13,193 | Goatee | 12,716 | Gray Hair | 8,499 |
+| Heavy Makeup | 78,390 | High Cheekbones | 92,189 | Male | 84,434 |
+| Mouth Slightly Open | 97,942 | Mustache | 8,417 | Narrow Eyes | 23,329 |
+| No Beard | 169,158 | Oval Face | 57,567 | Pale Skin | 8,701 |
+| Pointy Nose | 56,210 | Receding Hairline | 16,163 | Rosy Cheeks | 13,315 |
+| Sideburns | 11,449 | Smiling | 97,669 | Straight Hair | 42,222 |
+| Wavy Hair | 64,744 | Wearing Earrings | 38,276 | Wearing Hat | 9,818 |
+| Wearing Lipstick | 95,715 | Wearing Necklace | 24,913 | Wearing Necktie | 14,732 |
+| Young | 156,734 |  |  |  |  |
+| **Total** | **202,599** |  |  |  |  |
+
+##### **CIFAR10_LT**
+
+| Label | Quantity | Label | Quantity | Label | Quantity |
+|:--|:--:|:--:|:--:|:--:|:--:|
+| Airplane | 5,000 | Automobile | 3,422 | Bird | 3,650 |
+| Cat | 3,885 | Deer | 3,020 | Dog | 228 |
+| Frog | 2,525 | Horse | 4,308 | Ship | 2,259 |
+| Truck | 4,934 |  |  |  |  |
+| **Total** | **70,000** |  |  |  |  |
+
+#### **ImageNet_LT**
+
+| Label | Quantity | Label | Quantity | Label | Quantity | Label | Quantity | Label | Quantity |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 0 | 50 | 1 | 87 | 2 | 124 | 3 | 161 | 4 | 198 |
+| 5 | 235 | 6 | 272 | 7 | 309 | 8 | 346 | 9 | 383 |
+| 10 | 420 | 11 | 457 | 12 | 494 | 13 | 531 | 14 | 568 |
+| 15 | 605 | 16 | 642 | 17 | 679 | 18 | 716 | 19 | 753 |
+| 20 | 790 | 21 | 827 | 22 | 864 | 23 | 901 | 24 | 938 |
+| 25 | 975 | 26 | 1012 | 27 | 1049 | 28 | 1086 | 29 | 1123 |
+| 30 | 1160 | 31 | 1197 | 32 | 1234 | 33 | 1271 | 34 | 1308 |
+| 35 | 1345 | 36 | 1382 | 37 | 1419 | 38 | 1456 | 39 | 1493 |
+| 40 | 1530 | 41 | 67 | 42 | 104 | 43 | 141 | 44 | 178 |
+| 45 | 215 | 46 | 252 | 47 | 289 | 48 | 326 | 49 | 363 |
+| ⋮ | ⋮ | ⋮ | ⋮ | ⋮ | ⋮ | ⋮ | ⋮ | ⋮ | ⋮ |
+| *(Rows 50–999 omitted for brevity — full table available in `data/ImageNet_LT_full.csv`)* |
+
+> **Note:**  
+> The full 1000-class ImageNet_LT distribution is included in the repository as a CSV file for readability:
+> ```
+> data/ImageNet_LT_full.csv
+> ```
+> Only the first few rows are shown above for demonstration.
 
 ### Table 2
 
